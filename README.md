@@ -50,5 +50,3 @@ python financial_agent.py
 - yfinance para datos financieros
 - DuckDuckGo para búsqueda web
 
-## 📄 Licencia
-Este proyecto está bajo la Licencia MIT - ver el archivo LICENSE para más detalles.
