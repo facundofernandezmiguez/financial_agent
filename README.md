@@ -1,4 +1,4 @@
-# Agenticia - Asistente Financiero con IA
+# Asistente Financiero con IA
 
 ## 🚀 Descripción
 Agenticia es un asistente financiero inteligente que combina el poder de múltiples agentes de IA para proporcionar recomendaciones de inversión informadas y análisis financiero. El sistema utiliza dos agentes especializados:
