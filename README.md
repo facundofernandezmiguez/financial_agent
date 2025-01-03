@@ -74,15 +74,4 @@ python financial_agent.py --stock "AAPL" --analysis "full"
 
 Las contribuciones son bienvenidas! Por favor, lee nuestra guía de contribución antes de enviar un PR.
 
-## 📝 Licencia
 
-Este proyecto está licenciado bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
-
-## 🌟 Agradecimientos
-
-- Equipo de Groq por su increíble LLM
-- Comunidad de phidata por sus herramientas
-- Contribuidores de yfinance
-
----
-Desarrollado con ❤️ para la comunidad de trading e inversión
