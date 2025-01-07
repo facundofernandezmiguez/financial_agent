@@ -13,7 +13,6 @@ load_dotenv()
 # Load environment variables
 groq_api_key = os.getenv("GROQ_API_KEY")
 phi_api_key = os.getenv("PHI_API_KEY")
-model_id = os.getenv("MODEL_ID")
 
 # Web Search Agent
 web_search_agent = Agent(
@@ -31,8 +30,7 @@ web_search_agent = Agent(
 # Financial Agent
 finance_agent = Agent(
     name="Finance Agent",
-    role="""Expert Financial Analyst.
-           Provides detailed market analysis and data-driven recommendations.""",
+    role="Expert Financial Analyst.",
     model=Groq(id="llama-3.3-70b-versatile"),
     tools=[YFinanceTools(
         stock_price=True,

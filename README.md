@@ -72,3 +72,9 @@ The interactive playground will be available at `http://localhost:8000`
 Feel free to fork the repository and submit pull requests. For major changes, please open an issue first to discuss what you would like to change.
 
 
+<<<<<<< HEAD
+=======
+Las contribuciones son bienvenidas! Por favor, lee nuestra guía de contribución antes de enviar un PR.
+
+
+>>>>>>> 9dfc481dbb9c31b078958811bc56d95ab4acda54
