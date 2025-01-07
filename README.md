@@ -1,4 +1,4 @@
-# Agenticia - AI-Powered Financial Assistant
+# Financial Agent - AI-Powered Financial Assistant
 
 An intelligent financial assistant powered by Large Language Models (LLMs) that combines market research and financial analysis capabilities through a user-friendly interface.
 
@@ -29,7 +29,7 @@ An intelligent financial assistant powered by Large Language Models (LLMs) that 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/facundofernandezmiguez/agenticia.git
+git clone https://github.com/facundofernandezmiguez/financial_agent
 cd agenticia
 ```
 
