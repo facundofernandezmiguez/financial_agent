@@ -1,88 +1,74 @@
-# Agenticia 🤖 - Tu Asistente Financiero con IA
+# Agenticia - AI-Powered Financial Assistant
 
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![Groq](https://img.shields.io/badge/LLM-Groq-orange.svg)](https://groq.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+An intelligent financial assistant powered by Large Language Models (LLMs) that combines market research and financial analysis capabilities through a user-friendly interface.
 
-## 🚀 Descripción
-Agenticia es un asistente financiero de última generación que aprovecha el poder de múltiples agentes de IA para proporcionar recomendaciones de inversión informadas y análisis financiero en tiempo real. El sistema implementa una arquitectura multi-agente que combina:
+## 🚀 Features
 
-- 📊 **Agente Financiero**: Análisis profundo de datos bursátiles y métricas empresariales
-- 🔍 **Agente de Búsqueda Web**: Recopilación de noticias y tendencias del mercado en tiempo real
-- 🤝 **Sistema Colaborativo**: Integración inteligente de insights de ambos agentes
+- **Web Search Agent**: Researches market trends and financial news using DuckDuckGo integration
+- **Financial Analysis Agent**: Provides stock analysis and investment recommendations using real-time market data
+- **Interactive Playground**: User-friendly interface to interact with both agents
+- **Real-time Data**: Integration with YFinance for up-to-date market information
+- **Multilingual Support**: Capable of processing queries and providing responses in multiple languages
 
-## 🛠️ Características Principales
+## 🛠️ Technology Stack
 
-- **Análisis de Mercado en Tiempo Real**
-  - Datos financieros actualizados mediante yfinance
-  - Recomendaciones basadas en tendencias actuales
-  - Visualización clara de métricas clave
+- Python 3.12+
+- Groq LLM (llama-3.3-70b-versatile model)
+- Phi Framework for AI Agents
+- YFinance for real-time market data
+- DuckDuckGo for web search capabilities
+- FastAPI & Uvicorn for the web interface
 
-- **Búsqueda Web Inteligente**
-  - Integración con DuckDuckGo para noticias relevantes
-  - Contextualización de eventos del mercado
-  - Fuentes verificadas y actualizadas
+## 📋 Prerequisites
 
-- **Recomendaciones Personalizadas**
-  - Análisis adaptado a tu perfil de riesgo
-  - Sugerencias basadas en tu capital disponible
-  - Estrategias de diversificación inteligente
+- Python 3.12 or higher
+- Groq API key
+- Phi API key
 
-## 📋 Requisitos Previos
-- Python 3.8 o superior
-- Claves API:
-  - GROQ API key
-  - PHI API key
+## 🔧 Installation
 
-## 🔧 Instalación
-
-1. Clonar el repositorio:
+1. Clone the repository:
 ```bash
 git clone https://github.com/facundofernandezmiguez/agenticia.git
 cd agenticia
 ```
 
-2. Instalar dependencias:
+2. Create a virtual environment and activate it:
+```bash
+python -m venv venv
+venv\Scripts\activate  # On Windows
+source venv/bin/activate  # On Unix or MacOS
+```
+
+3. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Configurar variables de entorno:
-Crear un archivo `.env` con:
+4. Create a `.env` file with your API keys:
+```env
+GROQ_API_KEY=your_groq_api_key
+PHI_API_KEY=your_phi_api_key
+```
+
+## 🚀 Usage
+
+Run the application:
 ```bash
-GROQ_API_KEY=tu_clave_api_groq
-PHI_API_KEY=tu_clave_api_phi
+python playground.py
 ```
 
-## 💡 Ejemplos de Uso
+The interactive playground will be available at `http://localhost:8000`
 
-```python
-# Obtener recomendación personalizada
-python financial_agent.py --capital 1000 --risk_profile "aggressive"
+## 📝 Example Queries
 
-# Análisis de una acción específica
-python financial_agent.py --stock "AAPL" --analysis "full"
-```
+- "What are the current market trends in tech stocks?"
+- "Analyze the performance of AAPL stock"
+- "I have $1000 to invest, what do you recommend?"
+- "What are the top-performing stocks in the renewable energy sector?"
 
-## 🔒 Seguridad
+## 🤝 Contributing
 
-- Todas las claves API se manejan de forma segura mediante variables de entorno
-- No se almacena información sensible del usuario
-- Comunicación cifrada con las APIs
+Feel free to fork the repository and submit pull requests. For major changes, please open an issue first to discuss what you would like to change.
 
-## 🤝 Contribuciones
 
-Las contribuciones son bienvenidas! Por favor, lee nuestra guía de contribución antes de enviar un PR.
-
-## 📝 Licencia
-
-Este proyecto está licenciado bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
-
-## 🌟 Agradecimientos
-
-- Equipo de Groq por su increíble LLM
-- Comunidad de phidata por sus herramientas
-- Contribuidores de yfinance
-
----
-Desarrollado con ❤️ para la comunidad de trading e inversión
